@@ -5,7 +5,7 @@
 let DEBUG = process.env.DEBUG || false;
 let COUNT = 0;
 
-exports.debug = (arg) => {
+exports.level = (arg) => {
     if (DEBUG) {
         if (typeof arg !== 'undefined') console.log(arg)
         else {
