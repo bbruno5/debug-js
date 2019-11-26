@@ -1,0 +1,12 @@
+{
+  "name": "debug-js",
+  "version": "1.0.0",
+  "description": "Debug library for nodeJS",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["debug", "node", "javascript", "js", "terminal"],
+  "author": "bbruno5",
+  "license": "ISC"
+}
