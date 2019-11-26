@@ -7,4 +7,4 @@ Simple debugger library for nodeJS
 `const debug = require('debug-js');`
 - Usage:<br>
 `debug.level(var);`<br><br>
-If you call `debug()` without arg, it will print a number in crescent order, until you script stop.
+If you call `debug.level()` without arg, it will print a number in crescent order, until you script stop.
