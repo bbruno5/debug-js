@@ -5,12 +5,16 @@
 let DEBUG = process.env.DEBUG || false;
 let COUNT = 0;
 
-exports.level = (arg) => {
+let logger = (arg) => {
+    if (typeof arg !== 'undefined') console.log(arg)
+    else {
+        console.log(COUNT);
+        COUNT++;
+    }
+}
+
+exports.level = (lvl=3, arg) => {
     if (DEBUG) {
-        if (typeof arg !== 'undefined') console.log(arg)
-        else {
-            console.log(COUNT);
-            COUNT++;
-        }
+        if (lvl === parseint(DEBUG)) logger(arg);
     }
 }
