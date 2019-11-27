@@ -13,12 +13,15 @@ let logger = (arg) => {
     }
 }
 
-exports.level = (lvl=3, arg) => {
+function level (lvl=3, arg) {
     if (DEBUG) {
-        if (typeof lvl !== 'undefined' && typeof arg === 'undefined') {
+        if (arguments.length === 1) {
+            console.log("args: " + arguments[0]);
             arg = lvl;
             lvl = 3;
         }
         if (lvl <= parseInt(DEBUG)) logger(arg);
     }
 }
+
+module.exports.level = level;
