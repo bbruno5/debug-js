@@ -16,7 +16,6 @@ let logger = (arg) => {
 function level (lvl=3, arg) {
     if (DEBUG) {
         if (arguments.length === 1) {
-            console.log("args: " + arguments[0]);
             arg = lvl;
             lvl = 3;
         }
