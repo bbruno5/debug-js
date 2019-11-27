@@ -9,7 +9,7 @@ Simple debugger library for nodeJS
 `debug.level(lvl, var);`<br><br>
 `lvl` must be a number between 0 and 3. Defaults to 3.<br>
 `var` must be the thing you want to print when debugging. A script, a text, etc.<br><br>
-If you call `debug.level()` without arg, it will print a number in crescent order, until you script stop. Only works if debug level is set to 3.<br><br>
+If you call `debug.level()` without arg, it will print a number in crescent order, until your script stop. Only works if debug level is set to 3.<br><br>
 - Calling debug on script time execution:<br>
 You must define DEBUG environment variable before call your script, defining a value between 0 and 3. Not defining it, means that its value will be false, and will take no effect.<br><br>
 `DEBUG=0|1|2|3 node ./yourcode.js yourargs`<br><br>
