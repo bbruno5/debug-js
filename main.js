@@ -15,8 +15,8 @@ let logger = (arg) => {
 
 exports.level = (lvl=3, arg) => {
     if (DEBUG) {
-        if (arguments.length === 1) {
-            arg = arguments[0];
+        if (typeof lvl !== 'undefined' && typeof arg === 'undefined') {
+            arg = lvl;
             lvl = 3;
         }
         if (lvl <= parseInt(DEBUG)) logger(arg);
