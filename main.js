@@ -15,6 +15,6 @@ let logger = (arg) => {
 
 exports.level = (lvl=3, arg) => {
     if (DEBUG) {
-        if (lvl <= parseint(DEBUG)) logger(arg);
+        if (lvl <= parseInt(DEBUG)) logger(arg);
     }
 }
